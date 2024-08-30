@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Portfolio</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Section -->
@@ -48,56 +48,43 @@
     </header>
     
         </div>
+<main class="main">
+  
+  <!-- HOME SECTION -->
 
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
- <script src="./assets/js/main.js"></script>
- <main class="main">
-   <!-- HOME SECTION -->
-   <section class="home bd_grid" id="home">
-     <div class="home_data" data-aos="fade-down">
-       <h1 class="home_title">
-         Hi, <br />I'm <span class="home_title-color"> Pathman</span>
-          Nadarajah <span> Sripathmanathan</span>
+  <section class="home bd_grid" id="home">
+    <div class="home_data" data-aos="fade-down">
+    <h1 class="home_title">
+        Hi, <br />I'm 
+          Web <span class="home_title-color">Developer </span>
         
-         ><br />Web Designer
-       </h1>
-       <a href="#contact" class="button"> Contact</a>
-     </div>
+        <br />Web Designer
+      </h1>
+      <a href="#contact" class="button"> Contact</a>
+    </div>
 
-     <div class="home_social">
-       <a href="#" class="home_social-icon data-aos="fade-down"" 
-         ><i class="bx bxl-facebook-circle"></i
-       ></a>
-       <a
-         href="#"
-         class="home_social-icon"  data-aos="fade-down"
-         data-aos-delay="250"
-         
-         ><i class="bx bxl-instagram"></i
-       ></a>
-       <a
-         href="#"
-         class="home_social-icon"  data-aos="fade-down"
-         data-aos-delay="250"
-        
-         ><i class="bx bxl-twitter"></i
-       ></a>
-       <a
-         href="#"
-         class="home_social-icon"  data-aos="fade-down"
-         data-aos-delay="250"
-        
-         ><i class="bx bxl-github"></i
-       ></a>
-     </div>
+    <div class="home_social">
+      <a href="#" class="home_social-icon data-aos="fade-down"" 
+        ><i class="bx bxl-facebook-circle"></i
+      ></a>
+      <a href="#"
+        class="home_social-icon"  data-aos="fade-down"
+        data-aos-delay="250"><i class="bx bxl-instagram"></i></a>
+      <a href="#"
+        class="home_social-icon"  data-aos="fade-down"
+        data-aos-delay="250"><i class="bx bxl-twitter"></i></a>
+      <a href="#"
+        class="home_social-icon"  data-aos="fade-down"
+        data-aos-delay="250"><i class="bx bxl-github"></i></a>
+    </div>
 
-     <div class="home_img"  data-aos="fade-down"
-     data-aos-delay="500">
+    <div class="home_img"  data-aos="fade-down"
+    data-aos-delay="500">
       <img src="assets/img/mypic.jpg" alt=""       data-aos="flip-left"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="2000">
         </section>
-         <!-- ABOUT SECTION -->
+      <!-- ABOUT SECTION -->
     <section class="about section" id="about">
       <h2 class="section-title"  data-aos="fade-down">About</h2>
 
@@ -109,23 +96,138 @@
         </div>
 
         <div>
-          <h2
-            class="about_subtitle"
-          
-          >
+          <h2 class="about_subtitle">
             I'm Pathman
           </h2>
+          <h3>My Journey in Technology</h3>
           <p class="about_text" >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            mollitia expedita molestiae consectetur sint doloremque cupiditate
-            ducimus ullam qui? Quo illo repellat incidunt dolor aliquam
-            impedit consectetur, aspernatur neque repellendus.
+            I began my technical journey in 1996 with a foundation in 
+            Windows systems,
+
+ basic programming, and Microsoft Office. My interest in programming grew,
+  leading me to explore Visual Basic, hardware, HTML, and C++ through a
+   volunteer-
+ run university course in Kaiserslautern, Germany.
+
+In 2010, I deepened my programming knowledge with intensive six-week 
+courses in Java and PHP. Building on this foundation, I furthered my web 
+development skills by mastering HTML, CSS, Bootstrap, and the Yii PHP framework.
           </p>
         </div>
-      </div>
+      
     </section>
+  
     
 
+    
+     <!-- skill SECTION -->
+     <section class=" bd_grid" id="skill">
+      <h2 class="section-title">Skill</h2>
+      <div class="skills-container" >
+      <div class="skill-box">
+        <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+          <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+          <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+                  stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="70.686" /> 
+                  <image class="progress-icon" href="./assets/img/html5 good.png" x="20" y="20" width="60" height="60" />
+        </svg>
+      </div>
+      <div class="skill-box">
+        <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+          <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+          <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+                  stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="70.686" /> 
+                  <image class="progress-icon" href="./assets/img/css3.png" x="20" y="20" width="60" height="60" />
+        </svg>
+      </div>
+      
+      <div class="skill-box">
+        <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+          <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+          <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+                  stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="70.686" /> 
+                  <image class="progress-icon" href="./assets/img/js.png" x="20" y="20" width="60" height="60" />
+        </svg>
+      </div>
+        <div class="skill-box">
+          <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+            <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+            <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+                    stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="70.686" /> 
+                    <image class="progress-icon" href="./assets/img/pythonicon.jpg" x="20" y="20" width="60" height="60" />
+          </svg>
+        </div>
+        <div class="skill-box">
+          <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+            <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+            <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+                    stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="70.686" /> 
+                    <image class="progress-icon" href="./assets/img/java.png" x="20" y="20" width="60" height="60" />
+          </svg>
+        </div>
+        <div class="skill-box">
+          <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+            <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+            <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+                    stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="70.686" /> 
+                    <image class="progress-icon" href="./assets/img/react.png" x="20" y="20" width="60" height="60" />
+          </svg>
+        </div>
+        <div class="skill-box">
+          <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+              <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+              <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="126.033" />
+              <image class="progress-icon" href="./assets/img/sql.png" x="20" y="20" width="60" height="60" />
+          </svg>
+      </div>
+      <div class="skill-box">
+        <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+            <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+            <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="126.033" />
+            <image class="progress-icon" href="./assets/img/django-logo-positive.png" x="20" y="20" width="60" height="60" />
+        </svg>
+    </div>
+    
+  <div class="skill-box">
+    <svg class="progress-circle" width="150" height="150" viewBox="0 0 100 100">
+        <circle class="progress-circle-background" cx="50" cy="50" r="45" fill="none" stroke="#ccc" stroke-width="5" />
+        <circle class="progress-circle-foreground" cx="50" cy="50" r="45" fill="none" stroke="#3498db" 
+            stroke-width="5" stroke-dasharray="282.743" stroke-dashoffset="56.548" />
+        <image class="progress-icon" href="./assets/img/php.jpg" x="20" y="20" width="60" height="60" />
+    </svg>
+</div>
+
+        
+        
+    </div>
+   </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class=" bd_grid">
+      <div class="slider">
+        
+        <div class="slide">
+          <a href="https://sripathman.github.io/cash-mashine/"><img src="assets/img/1.png" alt="Image 1"></a>
+        </div>
+        <div class="slide">
+          <a href=""><img src="assets/img/2.jpg" alt="Image 2"></a>
+        </div>
+        <div class="slide">
+          <a href=""></a><img src="assets/img/3.jpg" alt="Image 3"></a>
+        </div>
+        <div class="slide">
+         <a href=""> <img src="assets/img/1.png" alt="Image 3"></a>
+    
+        
+      </div>
+      
+      <button class="prev"><i class='bx bx-chevron-left'></i></button>
+      <button class="next"><i class='bx bx-chevron-right'></i></button>
+      
+    
+    </div>
+    </section>
+    
      <!-- CONTACT SECTION -->
 
      <section class="contact section" id="contact">
@@ -163,10 +265,14 @@
             class="control_button button"
             data-aos="fade-right"
             data-aos-delay="450"
+            
           />
         </form>
       </div>
     </section>
+    
+ </main>
+ 
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -207,17 +313,15 @@
         &#169; 2021 copyright all right reserved
       </p>
     </footer>
-  </main>
+  
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/main.js"></script>
-
   <script>
-    AOS.init({
+  AOS.init({
       duration: 1200,
       once: false,
     });
   </script>
- </main>
-</body>
+ </body>
 </html>
