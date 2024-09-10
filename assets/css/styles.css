@@ -676,6 +676,32 @@ margin: 0 auto;}
   position: absolute;
   width: 100%;
 }
+#intro {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column;
+  
+  padding-block: 150px;
+  border-radius: 50px;
+  text-align: center;
+  margin-block: 10px;
+  width: 100%; /* Set width to 100% for full-width */
+  aspect-ratio: 700 / 500; /* Maintain 350x250 aspect ratio */
+  max-width: 700px; /* Limit maximum width to 350px */
+  
+}
+#intro a{
+  color:rgb(255, 0, 0);
+}
+.ch_color_1{
+  background-color: aqua;
+  
+}
+.ch_color_2{
+  background-color:lightgreen;
+  color:white;
+
+
+}
 
 .slide img {
   width: 100%;
