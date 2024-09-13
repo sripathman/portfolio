@@ -683,7 +683,7 @@ margin: 0 auto;}
   padding-block: 150px;
   border-radius: 50px;
   text-align: center;
-  margin-block: 10px;
+  margin-block: 50px;
   width: 100%; /* Set width to 100% for full-width */
   aspect-ratio: 700 / 500; /* Maintain 350x250 aspect ratio */
   max-width: 700px; /* Limit maximum width to 350px */
@@ -694,14 +694,22 @@ margin: 0 auto;}
 }
 .ch_color_1{
   background-color: aqua;
+  color: blue;
   
 }
 .ch_color_2{
-  background-color:lightgreen;
-  color:white;
+  background-color:mediumseagreen;
+  color:blue;
 
 
 }
+.ch_color_3{
+  background-color: skyblue;
+  color:blue;
+
+
+}
+
 
 .slide img {
   width: 100%;
