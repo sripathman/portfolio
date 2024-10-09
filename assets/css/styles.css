@@ -1,4 +1,5 @@
 /* Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *{
 margin: 0;
@@ -74,6 +75,172 @@ body {
   font-family: var(--body-font);
   font-size: var(--nomral-font-size);
   color: var(--second-color);
+  
+}
+#logo-font{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#bg{color: #f4284a};
+.background-shapes .box1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #3f43fd;
+  border-radius: 0.35rem;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .box2 {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #3f43fd;
+  border-radius: 0.35rem;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .box3 {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 3px solid #3f43fd;
+  border-radius: 0.35rem;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot1 {
+  position: absolute;
+  top: 77%;
+  left: 6%;
+  width: 8px;
+  height: 8px;
+  background-color: #3f43fd;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot2 {
+  position: absolute;
+  top: 18%;
+  right: 4%;
+  width: 8px;
+  height: 8px;
+  background-color: #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot3 {
+  position: absolute;
+  top: 90%;
+  left: 43%;
+  width: 8px;
+  height: 8px;
+  background-color: #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .dot4 {
+  position: absolute;
+  top: 91%;
+  right: 5%;
+  width: 8px;
+  height: 8px;
+  background-color: #3f43fd;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .heart1 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 51%;
+  left: 13%;
+  z-index: -1;
+  color: #f4284a;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .heart2 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 55%;
+  right: 8%;
+  z-index: -1;
+  color: #f4284a;
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .circle1 {
+  position: absolute;
+  top: 80%;
+  left: 21%;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+.background-shapes .circle2 {
+  position: absolute;
+  top: 24%;
+  left: 52%;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #f4284a;
+  border-radius: 50%;
+  z-index: -1;
+  transform: rotate(360deg);
+  animation: box-shape linear 5s infinite;
+}
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+.color-anim {
+  animation: color-change 10s infinite;
+}
+@keyframes box-shape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-infinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h1,
@@ -391,8 +558,9 @@ padding-right: 2rem;
 }
 
 .home_img img{
-  width: 100%;
-  border-radius: 50%;
+  width: 50%;
+  border-radius: 40%;
+
 }
 
 /* BUTTONS */
@@ -402,7 +570,8 @@ padding-right: 2rem;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
-  /*background: var(--gardient-color);*/
+  border-top-right-radius: 0;
+  background: var(--gardient-color)
 }
 
 .button:hover {
@@ -530,14 +699,14 @@ var(--second-color);
   font-size: var(--nomral-font-size);
   cursor: pointer;
   margin-left: auto;
-  background-color: var(--second-color);
+  /*background-color: var(--second-color);*/
   
 }
 
 
 /* Footer */
 .footer {
-  background-color: var(--second-color);
+ /* background-color: var(--second-color);*/
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -718,10 +887,10 @@ margin: 0 auto;}
   
   
   }
-  color:blue;
 
 
-}
+
+
 
 
 .slide img {
