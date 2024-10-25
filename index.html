@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>v
     
   </head>
   <body>
@@ -54,23 +55,8 @@
   <!-- HOME SECTION -->
 
   <section class="home bd_grid hero-area" id="home">
-    <div class="background-shapes">
-      <div class="box1"></div>
-      <div class="box2"></div>
-      <div class="box3"></div>
-      <div class="dot1"></div>
-      <div class="dot2"></div>
-      <div class="dot3"></div>
-      <div class="dot4"></div>
-      <div class="heart1">
-        <i class='bx bx-heart'></i>
-      </div>
-      <div class="heart2">
-        <i class='bx bx-heart'></i>
-      </div>
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-  </div>
+    
+    
     <div class="home_data" data-aos="fade-down">
     <h1 class="home_title">
         Hi, <br />I'm <span class="home_title-color">Pathman </span>
@@ -105,11 +91,30 @@
 
     <div class="home_img"  data-aos="fade-down"
     data-aos-delay="500">
-      <img src="assets/img/mypic.jpg" alt=""       data-aos="flip-left"
+      <img src="assets/img/mypic.jpg" alt="" data-aos="flip-left"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="2000">
+    </div>
+    <div class="background-shapes">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+      <div class="dot3"></div>
+      <div class="dot4"></div>
+      <div class="heart1">
+        <i class='bx bx-heart'></i>
+      </div>
+      <div class="heart2">
+        <i class='bx bx-heart'></i>
+      </div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+  </div>
+  
         </section>
-      <!-- ABOUT SECTION -->
+         <!-- ABOUT SECTION -->
     <section class="about section" id="about">
       <h2 class="section-title"  data-aos="fade-down">About</h2>
 
@@ -145,6 +150,26 @@ development skills by mastering HTML, CSS, Bootstrap, and the Yii PHP
         </div>
       
       </section>
+      <!-- ABOUT SECTION
+      <section class="bd_grid about section" id="About">
+        <div class="skewbox">
+          <div class="content">
+              <h3>my name is pathman</h3>
+              <p>I began my technical journey in 1996 with a foundation
+                  in Windows systems, basic programming, and Microsoft Office.
+                  My interest in programming grew, leading me to explore Visual
+                  Basic, hardware, HTML, and C++ through a volunteer- run
+                  university course in Kaiserslautern, Germany. In 2010,
+                  I deepened my programming knowledge with intensive six-week
+                  courses in Java and PHP. Building on this foundation, I furthered
+                  my web development skills by
+                  mastering HTML, CSS, Bootstrap, and the Yii PHP framework. </p>
+          </div>
+          <div class="imagebox">
+              <img src="./assets/img/mypic.jpg" alt="My Picture">
+          </div>
+      </div>
+    </section>
   
     
 
@@ -368,5 +393,41 @@ development skills by mastering HTML, CSS, Bootstrap, and the Yii PHP
       once: false,
     });
   </script>
+ <script>$(document).ready(function() {
+  let scrollCount = 0;
+
+  function drawProgressCircles() {
+    if (scrollCount < 3) {
+      $('.progress-circle-foreground').each(function() {
+        const progressWidth = $(this).parent().data('progress');
+        const circumference = 2 * Math.PI * 45;
+        const dashLength = circumference * progressWidth / 100;
+
+        $(this).css({
+          strokeDasharray: `${dashLength} ${circumference - dashLength}`,
+          strokeDashoffset: circumference
+        });
+
+        $(this).animate({
+          strokeDashoffset: 0
+        }, 1000);
+      });
+
+      scrollCount++;
+    }
+  }
+
+  // Initial drawing
+  drawProgressCircles();
+
+  // Repeat drawing on scroll, limited to 3 times
+  $(window).scroll(function() {
+    drawProgressCircles();
+  })
+  
+  ;
+});
+</script>
+  
  </body>
 </html>
